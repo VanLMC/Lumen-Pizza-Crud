@@ -19,3 +19,5 @@ $router->get('/', function () use ($router) {
 
 $router->get('pizzas', 'PizzaController@index');
 $router->post('pizzas', 'PizzaController@store');
+$router->post('pizzas/{id}', 'PizzaController@update');
+$router->delete('pizzas/{id}', 'PizzaController@delete');
